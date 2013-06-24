@@ -1,35 +1,9 @@
-
-$(document).ready(function() {
-  $(".multi_button").click(show_metaserver);
-  main_page_links_show();
-
-  jQuery.i18n.properties({
-    name:'Messages', 
-    path:'languages/', 
-    mode:'both',
-    callback: init_i18n});
-});
+/* Freeciv.org website Javascript functions. */
 
 function init_i18n () 
 {
   for (translation_key in jQuery.i18n.map) {
     $("#" + translation_key).html(jQuery.i18n.map[translation_key]);
-  }
-}
-
-
-function main_page_links_show()
-{
-
-  /* show download link based on the user's operating system */
-  if (window.ui.os=="Windows") {
-    $("#download_button").attr("href", "http://prdownloads.sourceforge.net/freeciv/Freeciv-2.3.4-win32-gtk2-setup.exe?download");
-  } else if (window.ui.os=="Linux") {
-    $("#download_button").attr("href", "http://prdownloads.sourceforge.net/freeciv/freeciv-2.3.4.tar.bz2?download");
-  } else if (window.ui.os=="Mac OS X") {
-    $("#download_button").attr("href", "http://prdownloads.sourceforge.net/freeciv/freeciv-2.3.0-lion-gtk2.dmg?download");
-  } else {
-    $("#download_button").attr("href", "http://freeciv.wikia.com/wiki/Download");
   }
 
   $("#download_button").mouseover(function() {
@@ -53,6 +27,23 @@ function main_page_links_show()
     $('#playonline_button').addClass("btn-success");
   });
 
+}
+
+
+function main_page_links_show()
+{
+
+  /* show download link based on the user's operating system */
+  if (window.ui.os=="Windows") {
+    $("#download_button").attr("href", "http://prdownloads.sourceforge.net/freeciv/Freeciv-2.3.4-win32-gtk2-setup.exe?download");
+  } else if (window.ui.os=="Linux") {
+    $("#download_button").attr("href", "http://prdownloads.sourceforge.net/freeciv/freeciv-2.3.4.tar.bz2?download");
+  } else if (window.ui.os=="Mac OS X") {
+    $("#download_button").attr("href", "http://prdownloads.sourceforge.net/freeciv/freeciv-2.3.0-lion-gtk2.dmg?download");
+  } else {
+    $("#download_button").attr("href", "http://freeciv.wikia.com/wiki/Download");
+  }
+
 
 }
 
@@ -64,4 +55,14 @@ function show_metaserver()
   $("#documentation_heading").hide();
   $("hr").hide();
 }
+
+/* Called on startup */
+$(".multi_button").click(show_metaserver);
+main_page_links_show();
+
+jQuery.i18n.properties({
+    name:'Messages', 
+    path:'languages/', 
+    mode:'both',
+    callback: init_i18n});
 
