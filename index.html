@@ -61,8 +61,19 @@
 
       <!-- Main Content, consisting of an screenshot image, some text and buttons  -->
       <div id="main_content" class="jumbotron">
-	<p><img id="freeciv_splash" src="img/freeciv-ingame-screenshot.png"></p>
-        <p id="intro_text" class="lead">Freeciv is a Free and Open Source turn-based empire-building strategy game inspired by the history of human civilization. The game commences in prehistory and your mission is to lead your tribe from the Stone Age to the Space Age...</p>
+
+  <noscript>
+    <h1>Freeciv.org</h1>
+    <b>Freeciv is a Free and Open Source turn-based empire-building strategy game inspired by the history of human civilization. The game commences in prehistory and your mission is to lead your tribe from the Stone Age to the Space Age...</b>
+  <br>
+  Please continue to <a href="http://www.freeciv.org/wiki/">The Freeciv Wiki</a>. 
+  <br>
+  (Enable Javascript to get the best experience on freeciv.org.)
+  </noscript> 
+
+
+	<p><img id="freeciv_splash" alt="Freeciv Screenshot"></p>
+        <p id="intro_text" class="lead"></p>
         <a class="btn btn-large btn-success" id="download_button" href="http://freeciv.wikia.com/wiki/Download"></a>
         <a class="btn btn-large multi_button" id="multiplayer_button" href="#"></a>
         <a class="btn btn-large" id="wiki_button" href="http://www.freeciv.org/wiki/"></a>
@@ -108,8 +119,8 @@
 		<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 			<input type="hidden" name="cmd" value="_s-xclick">
 			<input type="hidden" name="hosted_button_id" value="QKGC4Q5FSMKLC">
-			<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-			<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+			<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+			<img alt="" style="border: 0;" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 		</form>
 
 	    </div>
@@ -183,7 +194,7 @@
 
 
       <div class="footer">
-	<img src="img/freeciv-splash.png">
+	<img id="footer_image">
 
         <p id="footer_text"></p>
       </div>

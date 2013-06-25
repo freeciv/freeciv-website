@@ -26,6 +26,8 @@ function init_i18n ()
     $('.btn-large').removeClass("btn-success");
     $('#playonline_button').addClass("btn-success");
   });
+  $("#freeciv_splash").attr("src", "img/freeciv-ingame-screenshot.png");
+  $("#footer_image").attr("src", "img/freeciv-splash.png");
 
 }
 
