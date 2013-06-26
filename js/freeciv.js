@@ -7,7 +7,7 @@ function init_i18n ()
   }
 
   $("#download_button").mouseover(function() {
-    $('#intro_text').html(download_tooltip + window.ui.os);
+    $('#intro_text').html(download_tooltip(window.ui.os));
     $('.btn-large').removeClass("btn-success");
     $('#download_button').addClass("btn-success");
   });
