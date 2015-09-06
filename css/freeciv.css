@@ -1,0 +1,196 @@
+body {
+  background-image:url('../images/bg2.png');
+
+}
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+
+body > .container {
+  padding: 60px 15px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+.jumbotron {
+  text-align: center;
+  padding: 0px 0px 10px 0px;
+  background:rgba(0,0,0,0.1);
+  min-height: 350px;
+  padding-top: 5px;
+}
+
+
+#header_teaser {
+  width: 75%;
+  min-height: 310px;
+  background-size: cover; 
+  background-image: url("../images/header-bg.png");
+  float: left;
+}
+
+#lead_text {
+    color: white;
+    font-size: 2.1em;
+    padding-left: 240px;
+    text-align: left;
+    font-weight: bold;
+    padding-top: 70px;
+    padding-right: 10px;
+}
+
+#links_box {
+  float: left;
+  background-color: #444444;
+  width: 25%;
+  min-height: 310px;
+  text-align: left;
+  padding:5px;
+  margin-left: -2px;
+  padding-top: 20px;
+}
+
+.dl_link, .dl_link:hover {
+  color: white;
+  font-size: 1.3em;
+}
+
+.jumbotron .dl_text {
+  color: #dddddd;
+  font-size: 0.9em;
+}
+
+#main_text {
+  float: left;
+}
+
+
+#download_box {
+  height: 60px;
+  padding-left: 60px; 
+  background: url("../images/freeciv-download-link.png") no-repeat;
+  margin-bottom: 10px;
+}
+
+#web_box {
+  height: 65px;
+  padding-left: 60px; 
+  background: url("../images/freeciv-web-link.png") no-repeat;
+  margin-bottom: 10px;
+}
+
+#development_box {
+  height: 65px;
+  padding-left: 60px; 
+  background: url("../images/freeciv-developers-link.png") no-repeat;
+  margin-bottom: 0px;
+}
+
+#forum_box {
+  height: 65px;
+  padding-left: 60px; 
+  background: url("../images/freeciv-forum-link.png") no-repeat;
+  margin-bottom: 10px;
+}
+
+
+@media (max-width: 500px) {
+  .dl_text {
+   display: none;
+  }
+  #lead_text {
+    font-size: 1.3em;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color:rgba(0,0,0,0.6);
+  }
+  #links_box {
+    width: 50%;
+  }
+  #header_teaser {
+    width: 50%;
+  }
+}
+
+
+@media (max-width: 768px) and (min-width: 500px) {
+ .dl_text {
+   display: none;
+ }
+ #lead_text {
+    font-size: 1.3em;
+    padding-left: 20px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color:rgba(0,0,0,0.6);
+ }
+  #links_box {
+    width: 50%;
+  }
+  #header_teaser {
+    width: 50%;
+  }
+
+}
+
+@media (max-width: 1200px) and (min-width: 768px) {
+ .dl_text {
+   display: none;
+ }
+
+ #lead_text {
+    font-size: 1.6em;
+ }
+  .searchbox {
+    display:none;
+  }
+
+}
+
+.left_pagepart {
+  padding: 10px; background-color:rgba(250,250,250,0.45);
+  min-height: 400px;
+  font-size: 1.6em;
+
+}
+
+.right_pagepart {
+  padding: 10px; 
+  background-color:rgba(0,0,0,0.1);
+  min-height: 400px;
+  font-size: 1.6em;
+}
+
+.subheadermenu {
+ padding: 10px; 
+ margin-bottom:5px; 
+ background-color:rgba(250,250,250,0.85); 
+ font-size: 1.4em;
+}
+
+#top_logo {
+  max-width:180px; margin-top: -7px;
+}
+
+.searchbox {
+  margin-bottom: -5px;
+}
