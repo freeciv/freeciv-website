@@ -124,10 +124,17 @@ code {
     background-color:rgba(0,0,0,0.6);
   }
   #links_box {
-    width: 50%;
+    width: 100%;
+    clear: both;
+    margin-left: 0px;
+    padding-left: 25px;
   }
   #header_teaser {
-    width: 50%;
+    width: 100%;
+    min-height: 180px;
+  }
+  .jumbotron {
+    min-height: 480px;
   }
 }
 
@@ -149,21 +156,29 @@ code {
   #header_teaser {
     width: 50%;
   }
-
-}
+ 
+ }
 
 @media (max-width: 1200px) and (min-width: 768px) {
- .dl_text {
-   display: none;
- }
+  .dl_text {
+    display: none;
+  }
 
- #lead_text {
+  #lead_text {
     font-size: 1.6em;
- }
+  }
   .searchbox {
     display:none;
   }
 
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+  .container .jumbotron  {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .left_pagepart {
