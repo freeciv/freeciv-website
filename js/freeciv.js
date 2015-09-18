@@ -1,7 +1,39 @@
+var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : sParameterName[1];
+        }
+    }
+};
+
+
+var page = getUrlParameter('page');
+
+if (page == "download" || page == "donate") {
+  $.ajax({
+    url: page + ".html",
+    cache: true,
+    async: false
+  })
+  .done(function(doc) {
+    $( "#content" ).html(doc);
+  });
+
+}
+
 
 $(function() {
+  $(".container").show();
+
   $("#download_box").click(function() {
-  window.location="download.html";
+  window.location="?page=download";
   });
   $("#web_box").click(function() {
   window.location="https://play.freeciv.org";
@@ -21,7 +53,7 @@ $(function() {
   } else if (window.ui.os=="Mac OS X") {
     $("#download_button").attr("href", "http://freeciv.wikia.com/wiki/Install-MacOSX");
   } else {
-    $("#download_button").attr("href", "download.html");
+    $("#download_button").attr("href", "?page=download");
   }
 
 });
