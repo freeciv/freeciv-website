@@ -1,8 +1,6 @@
 
 
 $(function() {
-  $(".container").show();
-
   $("#download_box").click(function() {
   window.location="download.html";
   });
