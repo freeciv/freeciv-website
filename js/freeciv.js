@@ -35,4 +35,7 @@ $(function() {
 
 });
 
+$( window ).resize(function() {
+  $("#mysearchform").get(0).scrollIntoView();
+});
 
