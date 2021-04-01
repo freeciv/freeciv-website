@@ -22,9 +22,9 @@ $(function() {
    * place.
   
   if (window.ui.os=="Windows") {
-    $("#download_button").attr("href", "http://prdownloads.sourceforge.net/freeciv/Freeciv-2.6.3-win32-gtk3-setup.exe?download");
+    $("#download_button").attr("href", "http://prdownloads.sourceforge.net/freeciv/Freeciv-2.6.4-win32-gtk3-setup.exe?download");
   } else if (window.ui.os=="Linux") {
-    $("#download_button").attr("href", "http://prdownloads.sourceforge.net/freeciv/freeciv-2.6.3.tar.bz2?download");
+    $("#download_button").attr("href", "http://prdownloads.sourceforge.net/freeciv/freeciv-2.6.4.tar.bz2?download");
   } else if (window.ui.os=="Mac OS X") {
     $("#download_button").attr("href", "http://www.freeciv.org/wiki/Install-MacOSX");
   } else {
