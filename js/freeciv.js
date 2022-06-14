@@ -8,10 +8,10 @@ $(function() {
   window.location="https://play.freeciv.org/";
   });
   $("#forum_box").click(function() {
-  window.location="http://forum.freeciv.org/";
+  window.location="https://forum.freeciv.org/";
   });
   $("#development_box").click(function() {
-  window.location="http://www.freeciv.org/wiki/How_to_Contribute";
+  window.location="https://www.freeciv.org/wiki/How_to_Contribute";
   });
 
   /* show download link based on the user's operating system */
@@ -26,7 +26,7 @@ $(function() {
   } else if (window.ui.os=="Linux") {
     $("#download_button").attr("href", "http://prdownloads.sourceforge.net/freeciv/freeciv-3.0.2.tar.xz?download");
   } else if (window.ui.os=="Mac OS X") {
-    $("#download_button").attr("href", "http://www.freeciv.org/wiki/Install-MacOSX");
+    $("#download_button").attr("href", "https://www.freeciv.org/wiki/Install-MacOSX");
   } else {
     $("#download_button").attr("href", "download.html");
   }
